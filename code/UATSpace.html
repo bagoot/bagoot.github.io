@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Author: Alex Battaglia --> 
+<html>
+    <head>
+        <script src="code.js"></script>
+        <script src="crabs.js"></script>
+         
+        <link rel="stylesheet" href="style.css">
+        <title>
+            UAT Space Program
+        </title>
+        <audio autoplay loop hidden>
+            <source src="seagulls.mp3" type="audio/mpeg">
+          </audio>
+        
+        
+     </head>
+     <embed width="0" height="0" src="seagulls.mp3" autostart="true" loop="true" volume="1">
+     </embed>
+<body>
+    <table>
+        <td> <img src="UATspaceLogo.jpg"> </td>
+        <td><h1>UAT Space Page</h1></td>
+    </table>
+ 
+    <br>
+    <table id="data" width="70%" border="2"> 
+        <col style= "width: 35%">
+        <col style= "width: 35%">
+        <thead>
+            <tr style= "font-family: fantasy;"></tr>
+            <th>Data Type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id= "seconds"><td>Time Elapsed</td><td>15 Seconds</td></tr>
+            <tr id= "Latitude"><td>Latitude</td><td>0</td></tr>
+            <tr id= "Longitude"><td>Longitude</td><td>0</td></tr>
+            <tr id= "GpsAltitude"><td>Gps Altitude</td><td>0</td></tr>
+            <tr id= "BPMSensorAltitude"><td>BPM Sensor Altitude</td><td>30383.04</td></tr>
+            <tr id= "BPMSensorPresure"><td>BPM Sensor Presure</td><td>2.34</td></tr>
+            <tr id= "BPMSensorTempature"><td>BPM Sensor Tempature</td><td>0</td></tr>
+            <tr id= "DigitalSensorTempature"><td>Digital Sensor Tempature</td><td>24.12</td></tr>
+            <tr id= "CSSSensorTempature"><td>CSS Sensor Tempature</td><td>25</td></tr>
+            <tr id= "CSSSensoreCO2"><td>CSS Sensor eCO2</td><td>400</td></tr>
+            <tr id= "CSSSensorTVOC"><td>CSS Sensor TVOC</td><td>0</td></tr>
+            <tr id= "UV"><td>UV</td><td>0</td></tr>
+            <tr id= "AccelX"><td>Accel X</td><td>-0.87</td></tr>
+            <tr id= "AccelY"><td>Accel Y</td><td>-0.02</td></tr>
+            <tr id= "AccelZ"><td>Accel Z</td><td>9.61</td></tr>
+            <tr id= "MagneticX"><td>Magnetic X</td><td>0.13</td></tr>
+            <tr id= "MagneticY"><td>Magnetic Y</td><td>0.57</td></tr>
+            <tr id= "MagnecticZ"><td>Magnectic Z</td><td>-0.24</td></tr>
+            <tr id= "GyroX"><td>Gyro X</td><td>4.66</td></tr>
+            <tr id= "GyroY"><td>Gyro Y</td><td>0.01</td></tr>
+            <tr id= "GyroZ"><td>Gyro Z</td><td>-0.4</td></tr>
+        </tbody>
+    </table>
+    <br>
+   
+    <button id="startButton" onclick="start();" class="button">start</button>
+    <button id= "stopButton" onclick="stop()" class="button">stop</button>
+    <br>
+    <br>
+    <button id="index" class="button" onclick="location.replace('index.html');">Space Page</button>
+    <button id="boards" class="button" onclick="location.replace('boards.html');">Boards Page</button>
+    <script>
+        // create a button that on click calls the play function from crabs.js 
+    </script>
+     
+</body>
+
+
+</html>
